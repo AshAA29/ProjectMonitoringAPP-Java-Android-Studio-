@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C24242"
+    tools:context=".StudentDashboard">
+
+    <EditText
+        android:id="@+id/StudentDashSearch"
+        android:layout_width="294dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:hint="Enter student first and last name ..."
+        android:inputType="textPersonName"
+        android:paddingLeft="2dp"
+        android:paddingTop="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo4" />
+
+    <ImageView
+        android:id="@+id/logo4"
+        android:layout_width="350dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pm_logo" />
+
+    <Button
+        android:id="@+id/btnStudentDashSearch"
+        android:layout_width="291dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="Search student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudentDashSearch" />
+
+    <ListView
+        android:id="@+id/studentListView"
+        android:layout_width="293dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="OR choose from the list below"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStudentDashSearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

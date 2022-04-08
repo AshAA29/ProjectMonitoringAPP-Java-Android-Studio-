@@ -1,0 +1,3 @@
+There seems to be an issues where sometimes, the project wont run properly in some computers.
+The solution to this is too go into the /app directory and delete the build folder and reopen the project in Android Studio.
+This directory is not part off the application submition but has been uploaded in case this project is used for future students to improve it.
